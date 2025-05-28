@@ -26,7 +26,7 @@ import AffiliatePage from './pages/AffiliatePage'; // Added
 // Dashboard Pages & Components
 import DashboardOverview from './components/features/UserDashboard/DashboardOverview';
 import DashboardWorkouts from './components/features/UserDashboard/DashboardWorkouts';
-import DashboardNutrition from '@/components/features/UserDashboard/DashboardNutrition'; // Changed to aliased path
+import DashboardNutrition from './components/features/UserDashboard/DashboardNutrition'; // Changed to relative path
 import DashboardProgress from './components/features/UserDashboard/DashboardProgress';
 import DashboardProfilePage from './components/features/UserDashboard/DashboardProfilePage'; // Added
 
