@@ -61,21 +61,24 @@
   <script type="importmap">
 {
   "imports": {
-    "react-router-dom": "https://esm.sh/react-router-dom@^6.24.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.24.0",
     "react-dom/": "https://esm.sh/react-dom@18.3.1/",
     "react/": "https://esm.sh/react@18.3.1/",
     "react": "https://esm.sh/react@18.3.1",
-    "@google/genai": "https://esm.sh/@google/genai@^1.1.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.511.0",
-    "recharts": "https://esm.sh/recharts@^2.15.3"
+    "@google/genai": "https://esm.sh/@google/genai@1.1.0",
+    "lucide-react": "https://esm.sh/lucide-react@0.511.0",
+    "recharts": "https://esm.sh/recharts@2.15.3"
   }
 }
 </script>
+<!-- Babel Standalone for client-side transpilation -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
   <body>
     <div id="root"></div>
     <!-- Load env.js BEFORE your main application script -->
     <script src="/env.js"></script>
-    <script type="module" src="/index.tsx"></script>
+    <!-- Update script type for Babel to transpile TSX/TS -->
+    <script type="text/babel" data-presets="typescript,react,env" data-type="module" src="/index.tsx"></script>
   </body>
 </html>
